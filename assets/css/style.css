@@ -1,0 +1,19 @@
+.show-title{
+    background: #cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.show-title:hover{
+    background: #e2e8f0;
+}
+.button{
+    text-align: center;
+    height: 90px;
+}
+.button-b{
+    width: 100%;
+    height: 100%;
+}
+.button-del{
+    border-radius: 25px;
+}

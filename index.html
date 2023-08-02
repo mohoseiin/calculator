@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
     <head>
 
         <title>calculator</title>
@@ -9,13 +9,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-    <h1>welcome</h1>
+    <div class="container">
+        <div class="row mt-4 mb-3 show-title p-4">
+            <div class="col-11">
+                <h2 id="data"></h2>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-group btn-lg" onclick="del()">delete</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(1)"><h2>1</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(2)"><h2>2</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(3)"><h2>3</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status('-')"><h1>-</h1></button></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(4)"><h2>4</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(5)"><h2>5</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(6)"><h2>6</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status('+')"><h1>+</h1></button></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(7)"><h2>7</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(8)"><h2>8</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(9)"><h2>9</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status('×')"><h1>×</h1></button></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status('.')"><h2>.</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status(0)"><h2>0</h2></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status('÷')"><h1>÷</h1></button></div>
+            <div class="col-3 button"><button class="btn btn-info btn-lg button-b" onclick="status('=')"><h1>=</h1></button></div>
+        </div>
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     </body>
 </html>
